@@ -17,11 +17,11 @@ function getValues(){
         document.querySelector("#resultado").innerHTML = acimaIdeal
     }if(imc > 30 && imc < 40){
         const obsidadeI = `Você está em nível de obesidade de grau 1`
-        document.querySelector("resultado").innerHTML = obsidadeI
+        document.querySelector("#resultado").innerHTML = obsidadeI
     }if(imc > 40){
         const obesidade2 = `Você está em um nível de obesidade de grau 2`
         document.querySelector("#resultado").innerHTML = obesidade2
-    }else{
+    }if(imc < 15){
         document.querySelector("#resultado").innerHTML = `Você está muito abaixo do seu peso ideal`
     }
 }
